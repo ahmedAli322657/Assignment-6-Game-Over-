@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Weather</title>
+  </head>
+  <body>
+    <section class="headerWrapper" id="home">
+      <header>
+        <img src="./imgs/imgi_1_wraper.png" class="headerImg" alt="" />
+      </header>
+      <div class="container">
+        <nav
+          class="navbar navbar-expand-lg bg-body-tertiary navColor rounded-4 z-3 position-sticky top-0 mb-5"
+        >
+          <div class="container-fluid">
+            <div class="d-flex justify-content-center align-items-center">
+              <div class="navLogo me-1">
+                <img src="./imgs/imgi_2_logo-sm.png" class="w-100" alt="" />
+              </div>
+              <a class="navbar-brand text-white" href="#">Game Reviews</a>
+            </div>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                  <a
+                    class="nav-link text-uppercase gameLinks"
+                    aria-current="page"
+                    href="#"
+                    >mmorpg</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-uppercase gameLinks" href="#"
+                    >shooter</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-uppercase gameLinks" href="#"
+                    >sailing</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-uppercase gameLinks" href="#"
+                    >permadeath</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-uppercase gameLinks" href="#"
+                    >superhero</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-uppercase gameLinks" href="#"
+                    >pixel</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <main>
+          <div class="row row-cols-1 row-cols-md-3 gy-3 gameContainer">
+            <div class="spinner">
+              <div class="bounce1"></div>
+              <div class="bounce2"></div>
+              <div class="bounce3"></div>
+            </div>
+          </div>
+        </main>
+      </div>
+    </section>
+
+    <section class="gameInfo vh-100 d-none" id="gameData">
+      <div class="container">
+        <div
+          class="d-flex justify-content-between align-items-center text-white py-3"
+        >
+          <h1>Details Game</h1>
+          <div>
+            <i class="fa-solid fa-xmark fa-xl closeX"></i>
+          </div>
+        </div>
+        <div class="row gameDetailsContainer">
+          <div class="spinner">
+            <div class="bounce1"></div>
+            <div class="bounce2"></div>
+            <div class="bounce3"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/script.js"></script>
+    <script src="./js/all.min.js"></script>
+  </body>
+</html>
